@@ -25,7 +25,7 @@ class Points:
 				if isinstance(fields[i], bool):
 					fields[i] = 1 if fields[i] else 0
 					fieldSet[fieldPrefix + i] = fields[i]
-				elif isinstance(fields[i], int):
+				elif isinstance(fields[i], int) or isinstance(fields[i], float):
 					fieldSet[fieldPrefix + i] = fields[i]
 				else:
 					fieldSet[fieldPrefix + i] = str(fields[i])
